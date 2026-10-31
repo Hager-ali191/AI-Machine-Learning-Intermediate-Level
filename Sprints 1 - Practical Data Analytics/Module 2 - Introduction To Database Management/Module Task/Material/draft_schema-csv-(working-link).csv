@@ -1,0 +1,21 @@
+OrderID,CustomerName,CustomerEmail,ProductID,ProductName,ProductCategory,SupplierName,SupplierContact,OrderDate,Quantity,TotalPrice
+ORD-5001,Alice Johnson,alice.j@example.com,PROD-101,AeroGlobal Noise-Canceling Headphones,Electronics,SkyTech Audio,contact@skytechaudio.com,2023-10-01,1,149.99
+ORD-5001,Alice Johnson,alice.j@example.com,PROD-102,Premium Sleep Mask,Comfort,RestWell Inc.,sales@restwell.com,2023-10-01,2,30.00
+ORD-5002,Carlos Mendez,cmendez88@mail.com,PROD-103,In-Flight Wi-Fi (24h),Services,AeroNet Comms,support@aeronet.aero,2023-10-02,1,19.99
+ORD-5003,Priya Patel,ppatel.travel@domain.com,PROD-104,Duty-Free Perfume (Floral),Beauty,LuxBrands International,orders@luxbrands.int,2023-10-02,1,85.50
+ORD-5003,Priya Patel,ppatel.travel@domain.com,PROD-105,Artisan Chocolate Box,Snacks,SweetAltitude,hello@sweetaltitude.com,2023-10-02,3,45.00
+ORD-5004,Alice Johnson,alice.j@example.com,PROD-103,In-Flight Wi-Fi (24h),Services,AeroNet Comms,support@aeronet.aero,2023-10-05,1,19.99
+ORD-5005,Lars Svensson,lars.s@euromail.com,PROD-101,AeroGlobal Noise-Canceling Headphones,Electronics,SkyTech Audio,contact@skytechaudio.com,2023-10-06,1,149.99
+ORD-5006,Wei Chen,w.chen_99@webmail.com,PROD-102,Premium Sleep Mask,Comfort,RestWell Inc.,sales@restwell.com,2023-10-06,1,15.00
+ORD-5006,Wei Chen,w.chen_99@webmail.com,PROD-106,Travel Adapter Kit,Electronics,SkyTech Audio,contact@skytechaudio.com,2023-10-06,1,25.00
+ORD-5007,Maria Garcia,maria.g20@mail.com,PROD-105,Artisan Chocolate Box,Snacks,SweetAltitude,hello@sweetaltitude.com,2023-10-07,2,30.00
+ORD-5008,Carlos Mendez,cmendez88@mail.com,PROD-104,Duty-Free Perfume (Floral),Beauty,LuxBrands International,orders@luxbrands.int,2023-10-08,1,85.50
+ORD-5008,Carlos Mendez,cmendez88@mail.com,PROD-107,Luxury Mens Watch,Accessories,LuxBrands International,orders@luxbrands.int,2023-10-08,1,299.00
+ORD-5009,Lars Svensson,lars.s@euromail.com,PROD-103,In-Flight Wi-Fi (24h),Services,AeroNet Comms,support@aeronet.aero,2023-10-09,1,19.99
+ORD-5010,Fatima Al-Sayed,fatima.alsayed@domain.com,PROD-101,AeroGlobal Noise-Canceling Headphones,Electronics,SkyTech Audio,contact@skytechaudio.com,2023-10-10,2,299.98
+ORD-5010,Fatima Al-Sayed,fatima.alsayed@domain.com,PROD-102,Premium Sleep Mask,Comfort,RestWell Inc.,sales@restwell.com,2023-10-10,1,15.00
+ORD-5011,Wei Chen,w.chen_99@webmail.com,PROD-103,In-Flight Wi-Fi (24h),Services,AeroNet Comms,support@aeronet.aero,2023-10-11,1,19.99
+ORD-5012,Alice Johnson,alice.j@example.com,PROD-107,Luxury Mens Watch,Accessories,LuxBrands International,orders@luxbrands.int,2023-10-12,1,299.00
+ORD-5013,Priya Patel,ppatel.travel@domain.com,PROD-106,Travel Adapter Kit,Electronics,SkyTech Audio,contact@skytechaudio.com,2023-10-12,1,25.00
+ORD-5014,James Smith,jsmith_travels@mail.com,PROD-105,Artisan Chocolate Box,Snacks,SweetAltitude,hello@sweetaltitude.com,2023-10-13,5,75.00
+ORD-5015,Maria Garcia,maria.g20@mail.com,PROD-103,In-Flight Wi-Fi (24h),Services,AeroNet Comms,support@aeronet.aero,2023-10-14,1,19.99
