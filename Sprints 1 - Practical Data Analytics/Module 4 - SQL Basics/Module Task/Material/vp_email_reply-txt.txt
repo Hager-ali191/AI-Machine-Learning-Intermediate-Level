@@ -1,0 +1,30 @@
+Subject: End-of-Month Executive Sales Report & Data Quality Findings
+
+Hi [VP of Operations / Name],
+
+Please find attached the end-of-month executive sales report (exported as `report_export.csv`), as requested. This report consolidates our customer, order, and product data, specifically highlighting our high-value customers (total purchases > $50) with completed transactions in the Tech categories. 
+
+While compiling this report, Elena and I also investigated the recent concerns raised by the customer service team regarding disconnected transactions. I ran a structural data quality check on our production tables and identified a specific issue with "orphan" records—these are active orders in our system that are not linked to any valid customer profile.
+
+Here are the specific findings from my analysis:
+
+### 1. Data Quality Findings
+**Total Orphan Records Found:** 
+[Total Orphan Records Found]
+
+### 2. Methodology & Technical Breakdown
+**Why these records were previously hidden:** 
+[Explanation of INNER JOIN vs LEFT JOIN differences - Explain how an INNER JOIN only returns records with matching customer IDs, while a LEFT JOIN from the orders table reveals the orders even if the customer data is missing/NULL]
+
+### 3. Reporting Impact
+**How this affects our reporting:** 
+[Impact on Total Row Count - Explain how these missing/orphan records affect the total row count and our overall revenue reporting if they are dropped by our standard reporting queries]
+
+I have included my SQL script (`sales_report_queries.sql`) which details both the consolidated sales query and the specific data quality check used to isolate these orphan records. 
+
+Please let me know if you would like me to work with the data engineering team to quarantine or patch these disconnected order records before we finalize the quarterly earnings.
+
+Best regards,
+
+[Your Name]
+Junior Database Analyst, CartGrid E-commerce

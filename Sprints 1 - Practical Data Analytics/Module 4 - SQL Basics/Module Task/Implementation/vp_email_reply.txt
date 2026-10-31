@@ -1,0 +1,29 @@
+Subject: End-of-Month Executive Sales Report & Data Quality Findings
+
+Hi,
+
+Please find attached the end-of-month executive sales report (exported as `report_export.csv`), as requested. This report consolidates our customer, order, and product data, specifically highlighting our high-value customers (total purchases > $50) with completed transactions in the Tech categories. 
+
+While compiling this report, Elena and I also investigated the recent concerns raised by the customer service team regarding disconnected transactions. I ran a structural data quality check on our production tables and identified a specific issue with "orphan" records—these are active orders in our system that are not linked to any valid customer profile.
+
+Here are the specific findings from my analysis:
+
+### 1. Data Quality Findings
+**Total Orphan Records Found:** 
+3 orphan orders out of 50 total orders (6%): order IDs 48, 49 and 50. They point to customer IDs 999, 888 and 777, none of which exist in our customer table. All three are marked "Completed" and are Tech products (4K Monitor, SoundMax Headphones, Gaming Console), together worth $950.00.
+
+### 2. Methodology & Technical Breakdown
+**Why these records were previously hidden:** 
+Think of the order list and the customer list as two spreadsheets that we match up by customer ID. My main report uses an INNER JOIN, which keeps only the orders where a matching customer is found, so any order with no customer is quietly left out. That is why the report returned 47 of our 50 orders and nothing looked wrong. A LEFT JOIN starts from the full order list and keeps every order, even when no customer matches; the missing customer simply shows up as blank. I used that approach in the quality check to bring the three hidden orders to the surface, and it returns all 50 orders.
+
+### 3. Reporting Impact
+**How this affects our reporting:** 
+Every standard report that joins orders to customers with an INNER JOIN drops these 3 orders, so it sees 47 orders instead of 50. For the Tech report in this email, all three orphans are completed Tech orders. That means about $950.00 of completed Tech sales (roughly 7.5% of the $12,620.00 in total) is not attributed to any customer and is missing from customer-level figures. The 18 customers in the attached report total $11,670.00. We do not yet know whether these three orders are real sales whose customer record was lost, or test or erroneous entries, so I would treat the $950.00 as unconfirmed rather than add or remove it.
+
+I have included my SQL script (`sales_report_queries.sql`) which details both the consolidated sales query and the specific data quality check used to isolate these orphan records. 
+
+Please let me know if you would like me to work with the data engineering team to quarantine or patch these disconnected order records before we finalize the quarterly earnings.
+
+Best regards,
+
+Junior Database Analyst, CartGrid E-commerce
