@@ -1,0 +1,3 @@
+# Usability Evaluation: Executive Command Center
+
+Zoom lets James drag a box over a crowded part of the Ad Spend and Conversions scatter panel to separate overlapping campaigns and compare ones that look identical at full scale, then double-click to return to the full view. Pan lets him slide across the zoomed Ad Spend and Revenue animation to follow a region's bubble from month to month, so he can see whether extra spend is really producing proportionally more revenue before he moves budget. Hover shows the exact region, month, spend, conversions and revenue behind any bar or bubble, so he can answer "how much, exactly?" live in the Q3 meeting without waiting for an analyst, which makes his budget decisions faster and backed by the actual numbers.
